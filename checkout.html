@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ticket Checkout</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <h2>The Wolfsonian-FIU</h2>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="questionnaire.html">
+                        Find an Exhibit
+                    </a>
+                </li>
+                <li><a href="checkout.html">Tickets</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <section class="page-header">
+
+        <p class="small-title">VISITOR TICKETS</p>
+
+        <h1>Ticket Checkout</h1>
+
+        <p>
+            Select your admission type.
+        </p>
+
+    </section>
+
+
+    <main class="checkout">
+
+        <div class="ticket-box">
+
+            <h2>Admission</h2>
+
+            <label for="ticketType">
+                Ticket Type
+            </label>
+
+            <select id="ticketType">
+
+                <option value="adult">
+                    Adult - $12.00
+                </option>
+
+                <option value="senior">
+                    Senior - $8.00
+                </option>
+
+                <option value="student">
+                    Student - $8.00
+                </option>
+
+                <option value="child">
+                    Child - $8.00
+                </option>
+
+                <option value="member">
+                    Member - Free
+                </option>
+
+                <option value="florida">
+                    Florida Resident - Free
+                </option>
+
+                <option value="military">
+                    Military - Free
+                </option>
+
+                <option value="friday">
+                    Free Friday - Free
+                </option>
+
+            </select>
+
+
+            <div class="free-friday">
+
+                <h3>Free Fridays</h3>
+
+                <p>
+                    Free admission is available Friday
+                    from 6 PM - 9 PM.
+                </p>
+
+            </div>
+
+
+            <div class="total">
+
+                <span>Total:</span>
+
+                <strong id="totalPrice">
+                    $12.00
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="ticket-box">
+
+            <h2>Payment</h2>
+
+            <p class="demo">
+                This is a demonstration checkout for the
+                Capstone project. No payment will actually
+                be processed.
+            </p>
+
+
+            <form id="paymentForm">
+
+                <label for="name">
+                    Cardholder Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="John Smith"
+                    required
+                >
+
+
+                <label for="card">
+                    Card Number
+                </label>
+
+                <input
+                    type="text"
+                    id="card"
+                    placeholder="1234 5678 9012 3456"
+                    required
+                >
+
+
+                <div class="two-inputs">
+
+                    <div>
+
+                        <label for="date">
+                            Expiration
+                        </label>
+
+                        <input
+                            type="text"
+                            id="date"
+                            placeholder="MM/YY"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="cvv">
+                            CVV
+                        </label>
+
+                        <input
+                            type="text"
+                            id="cvv"
+                            placeholder="123"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <button type="submit" class="button">
+                    Pay Now
+                </button>
+
+            </form>
+
+
+            <div
+                id="successMessage"
+                class="success"
+                style="display: none;"
+            >
+
+                <div class="success-circle">
+                    ✓
+                </div>
+
+                <h2>Payment Successful!</h2>
+
+                <p>
+                    Your ticket has been purchased successfully.
+                </p>
+
+                <a href="recommendation.html" class="button">
+                    Continue
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <p>The Wolfsonian-FIU</p>
+
+    </footer>
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
